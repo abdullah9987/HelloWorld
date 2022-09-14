@@ -1,0 +1,48 @@
+class Computer {
+    String name;
+    String production;
+    String type;
+    public void functions () {
+        System.out.println(this.name);
+        System.out.println(this.production);
+        System.out.println(this.type);
+    }
+}
+class Game {
+    String name;
+    String price;
+    String year;
+
+    public void functions () {
+        System.out.println(this.name);
+        System.out.println(this.price);
+        System.out.println(this.year);
+    }
+}
+public class ClassesNObjects {
+    public static void main(String[] args) {
+
+        Computer C1 = new Computer();
+        C1.name = "CPU";
+        C1.production ="2010";
+        C1.type = "core i3";
+
+        C1.functions();
+        Game G1 = new Game ();
+        G1.name = "Red dead redemption";
+        G1.price = "59$";
+        G1.year = "2018";
+
+        G1.functions();
+
+        Game G2 = new Game();
+        G2.name = "GTA VI";
+        G2.price = "100$";
+        G2.year = "Coming Soon";
+
+        G2.functions();
+
+
+
+    }
+}
